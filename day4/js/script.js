@@ -57,17 +57,63 @@
 let year = Number(prompt("Enter Year "));
 let leapYear = false;
 
-if (year % 4 === 0) {
-  if (year % 100 === 0) {
-    if (year % 400 === 0) {
-      leapYear = true;
-    }
-  }
+if (year % 4 === 0 && year % 100 !== 0) {
+  leapYear = true;
+} else if (year % 400 === 0) {
+  leapYear = true;
+} else {
+  leapYear = false;
 }
 
 console.log(`Generate Leap Year: ${leapYear}`);
-// let month = prompt('Enter Month: ').toLowerCase();
 
-// if (leapYear) {
-//   switch
-// }
+let month = prompt("Enter Month: ").toLowerCase();
+
+switch (month) {
+  case "january":
+    console.log("January has 31 days");
+    break;
+  case "feburary":
+    console.log(`Feburary has ${leapYear ? 29 : 28} days`);
+    break;
+  case "march":
+    console.log(`March has 31 days`);
+    break;
+  case "april":
+    console.log(`April has 30 days`);
+    break;
+  case "may":
+    console.log("May has 31 days");
+    break;
+  case "june":
+    console.log("June has 30 days");
+    break;
+  case "july":
+    console.log(`July has 31 days`);
+    break;
+  case "august":
+    console.log(`August has 31 days`);
+    break;
+  case "september":
+    console.log(`September has 30 days`);
+    break;
+  case "october":
+    console.log(`October has 31 days`);
+    break;
+  case "november":
+    console.log(`November has 30 days`);
+    break;
+  case "december":
+    console.log(`December has 31 days`);
+    break;
+  default:
+    console.log(`Unknown Month`);
+}
+
+// const greeting = () => {
+//   alert("Hello World!");
+// };
+
+// setTimeout(greeting, 3000);
+
+// setInterval(greeting, 3000);
