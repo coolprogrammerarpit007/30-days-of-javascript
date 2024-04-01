@@ -125,11 +125,11 @@ const maxLength = (arr) => {
 };
 
 // function to find the maximum string
+let lengthOfCountries = [];
+for (const country of countries) {
+  lengthOfCountries.push(country.length);
+}
 const highestString = (countries) => {
-  let lengthOfCountries = [];
-  for (const country of countries) {
-    lengthOfCountries.push(country.length);
-  }
   let highest = maxLength(lengthOfCountries);
   return countries[lengthOfCountries.indexOf(8)];
 };
