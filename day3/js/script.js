@@ -1,79 +1,57 @@
-"use strict";
+`use strict`;
 
-console.log("30 days of JavaScript");
-// console.log(Boolean(0n));
+// rule of thumb, if value is not equal with '==' then it will not be equal with '==='
 
-// Falsey values in JavaScript
 
-// 1 0
-// 2 0n
-// 3 null
-// 4 undefined
-// 5 Nan
-// 6 false
-// '' -> empty string
+// Date Object in JavaScript
 
-// alert("30 days of JavaSript");
-// let agree = confirm("Are you sure want to delete this ?");
-// console.log(agree);
+const today = new Date();
+// console.log(today);
+// console.log(today.getFullYear());
+// console.log(today.getMonth()+1);
+// console.log(today.getDate());
+// console.log(today.getDay());
+// console.log(today.getHours());
+// console.log(today.getMinutes());
+// console.log(today.getSeconds());
 
-const time = new Date();
-// console.log(time);
 
-// gettting full year
+// Exercise Level1
 
-// const year = new Date();
-// console.log(year.getFullYear());
-// console.log(year.getMonth() + 1);
-// console.log(year.getDate()); // will get date b/w 1 to 31
-// console.log(year.getDay());
-// console.log(year.getHours());
-// console.log(year.getMinutes());
+// let firstName = `Arpit`;
+// let lastName = `Mishra`;
+// let country = `India`;
+// let city = `Jaipur`;
+// let age = 25;
+// let isMarried = false;
+// let year = 2024;
 
-// Day 3 Exercise
+// // console.log(typeof firstName);
+// // console.log(typeof lastName);
+// // console.log(typeof country);
+// // console.log(typeof city);
+// // console.log(typeof age);
+// // console.log(typeof isMarried);
+// // console.log(typeof year);
 
-let firstName = "Arpit";
-let lastName = "Mishra";
-let country = "India";
-let city = "Jaipur";
-let isMarried = false;
-let year = time.getFullYear();
-// console.log(typeof firstName, firstName);
-// console.log(typeof lastName, lastName);
-// console.log(typeof country, country);
-// console.log(typeof city, city);
-// console.log(typeof isMarried, isMarried);
-// console.log(typeof year, year);
-// console.log(typeof `10` == typeof 10);
-// console.log(typeof parseInt(`10`) == typeof 10);
-// console.log(Boolean(78));
-// console.log(Boolean("hllo"));
-// console.log(Boolean({}));
-// console.log(Boolean(``));
-// console.log(Boolean(null));
-// console.log(Boolean(undefined));
-// console.log(4 !== "4");
 
-// Level 2 Exercise
 
-// const base = prompt("Enter base of triangle: ");
-// const height = prompt("Enter height of triangle: ");
+// const currentYear = new Date().getFullYear();
+// const userBirthYear = Number(prompt(`Enter your birth year!`));
+// console.log(`User is ${currentYear - userBirthYear} years old!`);
 
-// const areaOfTriangle = 0.5 * +base * +height;
-// console.log(`Area of triangle is: ${areaOfTriangle}`);
+// console.log(`10` === 10); // false
+// console.log(parseInt(`9.8`) === 10); // false
+// console.log(4 != `4`);
+// console.log(4 !== `4`);
+// console.log(!(4>3));
+// console.log(`dragon`.includes(`on`));
+// console.log(`python`.includes(`on`));
 
-// const side1 = +prompt("Enter side 1 of triangle: ");
-// const side2 = parseInt(prompt("Enter side 2 of triangle: "));
-// const side3 = Number(prompt("Enter side 3 of triangle: "));
 
-// const perimeterOfTriangle = side1 + side2 + side3;
-// console.log(`Perimeter of triangle: ${perimeterOfTriangle}`);
+// Calculate how many seconds a user can leave
 
-// const fName = prompt("Enter your name: ");
-// console.log(fName.length > 7 ? `Your name is large: ` : `Your name is short:`);
 
-// const yearsToLive = Number(
-//   prompt("Enter a number of years a person can live: ")
-// );
-// let seconds = yearsToLive * 365 * 24 * 60 * 60;
-// console.log(seconds);
+const totalYearsPersonLive = Number(prompt(`Enter number of years you live on earth`));
+const secondsInAYear = 365*24*60*60;
+// console.log(`Total seconds a person can leave: ${secondsInAYear * totalYearsPersonLive}`);
