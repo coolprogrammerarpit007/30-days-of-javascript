@@ -28,92 +28,60 @@
 // const season = prompt("Enter season: ").toLowerCase();
 
 // switch (season) {
-//   case "september":
-//   case "october":
-//   case "november":
-//     console.log(`Season is Autumn`);
+//   case `december`:
+//   case `january`:
+//   case `feburary`:
+//     console.log(`Winter`);
 //     break;
-//   case "december":
-//   case "january":
-//   case "feburary":
-//     console.log(`Season is Winter`);
+
+//   case `march`:
+//   case `april`:
+//   case `may`:
+//     console.log(`Spring`);
 //     break;
-//   case "march":
-//   case "april":
-//   case "may":
-//     console.log(`Season is Spring`);
+
+//   case `june`:
+//   case `july`:
+//   case `august`:
+//     console.log(`Summer`);
 //     break;
-//   case "june":
-//   case "july":
-//   case "august":
-//     console.log(`Season is Summer`);
+
+//   case `september`:
+//   case `october`:
+//   case `november`:
+//     console.log(`Autumn`);
 //     break;
+
 //   default:
-//     console.log("Unknown Season ");
+//     console.log(`You Enter a wrong value!`);
+  
 // }
 
 // Condition for the leap year
 
-let year = Number(prompt("Enter Year "));
-let leapYear = false;
+// finding the leap year condition 
 
-if (year % 4 === 0 && year % 100 !== 0) {
-  leapYear = true;
-} else if (year % 400 === 0) {
-  leapYear = true;
-} else {
-  leapYear = false;
+let flag = false;
+const leapYear = function(year){
+
+  // condition to check the leap year
+  if(year % 100 === 0 ){
+    if(year % 400 === 0){
+      flag = true;
+    }
+  }
+
+  else if(year % 4 === 0){
+    flag = true;
+  }
+
+  else{
+    flag = false;
+  }
+
+  return flag;
 }
 
-console.log(`Generate Leap Year: ${leapYear}`);
+// console.log(leapYear(1990))
 
-let month = prompt("Enter Month: ").toLowerCase();
 
-switch (month) {
-  case "january":
-    console.log("January has 31 days");
-    break;
-  case "feburary":
-    console.log(`Feburary has ${leapYear ? 29 : 28} days`);
-    break;
-  case "march":
-    console.log(`March has 31 days`);
-    break;
-  case "april":
-    console.log(`April has 30 days`);
-    break;
-  case "may":
-    console.log("May has 31 days");
-    break;
-  case "june":
-    console.log("June has 30 days");
-    break;
-  case "july":
-    console.log(`July has 31 days`);
-    break;
-  case "august":
-    console.log(`August has 31 days`);
-    break;
-  case "september":
-    console.log(`September has 30 days`);
-    break;
-  case "october":
-    console.log(`October has 31 days`);
-    break;
-  case "november":
-    console.log(`November has 30 days`);
-    break;
-  case "december":
-    console.log(`December has 31 days`);
-    break;
-  default:
-    console.log(`Unknown Month`);
-}
-
-// const greeting = () => {
-//   alert("Hello World!");
-// };
-
-// setTimeout(greeting, 3000);
-
-// setInterval(greeting, 3000);

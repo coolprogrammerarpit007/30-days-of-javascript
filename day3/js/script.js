@@ -5,7 +5,7 @@
 
 // Date Object in JavaScript
 
-const today = new Date();
+// const today = new Date();
 // console.log(today);
 // console.log(today.getFullYear());
 // console.log(today.getMonth()+1);
@@ -52,6 +52,6 @@ const today = new Date();
 // Calculate how many seconds a user can leave
 
 
-const totalYearsPersonLive = Number(prompt(`Enter number of years you live on earth`));
-const secondsInAYear = 365*24*60*60;
+// const totalYearsPersonLive = Number(prompt(`Enter number of years you live on earth`));
+// const secondsInAYear = 365*24*60*60;
 // console.log(`Total seconds a person can leave: ${secondsInAYear * totalYearsPersonLive}`);
