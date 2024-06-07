@@ -85,3 +85,7 @@ const leapYear = function(year){
 // console.log(leapYear(1990))
 
 
+// now finding the days of a month based on the condition whether a year is leap year or not
+
+
+
